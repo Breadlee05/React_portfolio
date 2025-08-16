@@ -11,7 +11,7 @@ I wanted a space to share who I am, the projects I’ve worked on, and what I ca
 - Contact info (email + socials)
 
 ## Tech I used
-React, JavaScript, HTML, CSS, Git, and deployed on Netlify.
+React, JavaScript, HTML, CSS, Git, and deployed on vercel.
 
 ## Live Link
 https://breadlee-portfolio.vercel.app/
