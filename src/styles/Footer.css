@@ -1,0 +1,31 @@
+.footer {
+  background: rgba(26, 11, 46, 0.95);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #b26dff;
+  transform: scale(1.2);
+}
+

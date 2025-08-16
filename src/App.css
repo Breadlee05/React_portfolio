@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a0b2e; /* Dark Purple */
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2e004f, #4a148c);
+  transition: background 0.8s ease;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+button, a {
+  transition: all 0.3s ease;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* match your navbar height */
+}
+
+
+
+

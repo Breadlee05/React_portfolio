@@ -1,0 +1,57 @@
+.skills-section {
+  background: linear-gradient(135deg, #4b0082, #6a0dad);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.skill-card {
+  margin: 20px 0;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.skill-bar {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, #ff00ff, #ff66ff);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 20px;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+  animation: fillBar 1.5s ease forwards;
+}
+
+.skill-level {
+  font-size: 0.9rem;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
