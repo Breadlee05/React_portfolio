@@ -6,7 +6,7 @@ A **personal portfolio website** built with **React.js** to showcase projects, s
 
 ## 🌐 Live Demo
 
-[View the Portfolio]
+[View the Portfolio] https://breadlee-portfolio.vercel.app/
 
 ---
 
