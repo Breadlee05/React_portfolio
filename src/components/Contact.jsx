@@ -1,32 +1,27 @@
-import React from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import '../styles/Contact.css';
+import React from "react";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import "../styles/Contact.css";
 
 function Contact() {
+  const contacts = [
+    { name: "Email", icon: <FaEnvelope />, link: "mailto:breadlee05@gmail.com" },
+    { name: "LinkedIn", icon: <FaLinkedin />, link: "https://linkedin.com/in/breadlee05" },
+    { name: "GitHub", icon: <FaGithub />, link: "https://github.com/Breadlee05" },
+  ];
+
   return (
     <section id="contact" className="contact-section">
-      <div className="contact-card">
-        <h2>Contact Me</h2>
-        <p>Thanks for visiting my portfolio! Looking forward to connecting with you.</p>
-        
-        <div className="contact-links">
-          <a href="mailto:breadlee05@gmail.com">
-            <FaEnvelope /> Email
+      <h2 className="contact-title">Contact Me</h2>
+      <p className="contact-text">Thanks for visiting my portfolio! I’m looking forward to connecting with you.</p>
+      <div className="contact-links">
+        {contacts.map((contact, index) => (
+          <a key={index} href={contact.link} target="_blank" rel="noreferrer">
+            {contact.icon} {contact.name}
           </a>
-          <a href="https://linkedin.com/in/breadlee05" target="_blank" rel="noreferrer">
-            <FaLinkedin /> LinkedIn
-          </a>
-          <a href="https://github.com/Breadlee05" target="_blank" rel="noreferrer">
-            <FaGithub /> GitHub
-          </a>
-          <a href="https://instagram.com/breadlee05" target="_blank" rel="noreferrer">
-            <FaInstagram /> Instagram
-          </a>
-        </div>
+        ))}
       </div>
     </section>
   );
 }
 
 export default Contact;
-

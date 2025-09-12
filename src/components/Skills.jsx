@@ -1,17 +1,28 @@
-// src/components/Skills.js
 import React from "react";
 import "../styles/Skills.css";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaPython,
+  FaGitAlt,
+  FaServer
+} from "react-icons/fa";
 
 const skills = [
-  { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "React", level: 75 },
-  { name: "RestAPI", level: 70 },
-  { name: "Express.js", level: 70 },
-   { name: "Node.js", level: 70 },
-    { name: "Mongodb", level: 65 },
-    { name: "Python", level: 60 },
+  { name: "HTML", level: 90, icon: <FaHtml5 /> },
+  { name: "CSS", level: 80, icon: <FaCss3Alt /> },
+  { name: "JavaScript", level: 80, icon: <FaJs /> },
+  { name: "React", level: 70, icon: <FaReact /> },
+  { name: "REST API", level: 70, icon: <FaServer /> },
+  { name: "Express.js", level: 70, icon: <FaNodeJs /> },
+  { name: "Node.js", level: 70, icon: <FaNodeJs /> },
+  { name: "MongoDB", level: 70, icon: <FaDatabase /> },
+  { name: "Python", level: 60, icon: <FaPython /> },
+  { name: "Git", level: 90, icon: <FaGitAlt /> },
 ];
 
 function Skills() {
@@ -21,7 +32,10 @@ function Skills() {
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            <span className="skill-name">{skill.name}</span>
+            <div className="skill-header">
+              <div className="skill-icon">{skill.icon}</div>
+              <span className="skill-name">{skill.name}</span>
+            </div>
             <div className="skill-bar">
               <div
                 className="skill-progress"
@@ -38,4 +52,3 @@ function Skills() {
 }
 
 export default Skills;
-

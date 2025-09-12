@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "../styles/Footer.css";
 
 function Footer() {
@@ -13,13 +13,9 @@ function Footer() {
         <a href="https://github.com/Breadlee05" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        <a href="https://instagram.com/breadlee05" target="_blank" rel="noreferrer">
-          <FaInstagram />
-        </a>
       </div>
     </footer>
   );
 }
 
 export default Footer;
-

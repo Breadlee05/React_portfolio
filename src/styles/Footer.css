@@ -1,31 +1,30 @@
 .footer {
-  background: rgba(26, 11, 46, 0.95);
-  padding: 20px;
-  text-align: center;
+  padding: 30px 20px;
+  background: #1a0b2e; /* matches portfolio theme */
   color: white;
-  margin-top: 50px;
+  text-align: center;
 }
 
 .footer p {
-  margin: 0;
-  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .footer-links {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .footer-links a {
   color: white;
   font-size: 1.5rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-links a:hover {
-  color: #b26dff;
+  color: #ff77ff;
   transform: scale(1.2);
+  text-shadow: 0 0 10px #ff77ff, 0 0 20px #dba6ff;
 }
-

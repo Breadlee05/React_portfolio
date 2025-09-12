@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/About.css";
-import resume from "../assets/breadlee_resume.pdf";
 import profile from "../assets/profile2.jpg"; // Add your image in assets folder
 
 export default function About() {
@@ -20,9 +19,7 @@ export default function About() {
         <p>
           <strong>Tech Stack:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Node.js, Express.js, REST API, MongoDB, Git
         </p>
-        <a href={resume} download="My_Resume.pdf" className="resume-btn">
-          Download Resume
-        </a>
+       
       </div>
 
       <div className="about-image">
