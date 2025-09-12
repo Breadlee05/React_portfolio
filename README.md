@@ -26,3 +26,4 @@ A **personal portfolio website** built with **React.js** to showcase projects, s
 - **Contact Section:** Easy access to contact links and social media profiles.  
 
 ---
+👨‍💻 Author : P.Breadlee GitHub: https://github.com/Breadlee05 Portfolio: https://breadlee-portfolio.vercel.app/
