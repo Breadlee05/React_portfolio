@@ -1,3 +1,4 @@
+/* ---------- Navbar Container ---------- */
 .navbar {
   position: fixed;
   top: 0;
@@ -6,23 +7,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
+  padding: 12px 15px; /* slightly reduced padding */
   z-index: 1000;
+  box-sizing: border-box; /* include padding in width */
 }
 
+/* ---------- Logo ---------- */
 .navbar-logo {
   font-size: 1.8rem;
   color: #ff77ff;
   font-weight: bold;
 }
 
-/* Desktop links */
+/* ---------- Desktop Links ---------- */
 .desktop-links {
   display: flex;
-  gap: 25px;
+  gap: 15px;          /* smaller gap to prevent overflow */
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;    /* allow wrapping if screen is small */
 }
 
 .desktop-links li a {
@@ -41,21 +45,23 @@
   color: #fff;
 }
 
-/* Hamburger */
+/* ---------- Hamburger / Mobile Menu Toggle ---------- */
 .menu-toggle {
   display: none;
   font-size: 2rem;
   color: white;
   cursor: pointer;
-  z-index: 9999; /* always on top */
+  padding: 5px 10px; /* clickable area */
+  z-index: 9999;
 }
 
-/* Mobile menu container */
+/* ---------- Mobile Menu Container ---------- */
 .navbar-links-container {
   position: fixed;
   top: 0;
-  right: -100%;
-  width: 220px;
+  right: -100%;        /* hidden by default */
+  width: 75%;           /* responsive width */
+  max-width: 300px;     /* not too wide */
   height: 100vh;
   background-color: #1a0b2e;
   padding-top: 60px;
@@ -63,13 +69,14 @@
   flex-direction: column;
   gap: 20px;
   transition: right 0.3s ease-in-out;
-  z-index: 9998; /* higher than overlay */
+  z-index: 9998;
 }
 
 .navbar-links-container.open {
-  right: 0;
+  right: 0;             /* slide in */
 }
 
+/* ---------- Mobile Links ---------- */
 .navbar-links {
   list-style: none;
   padding: 0;
@@ -80,7 +87,7 @@
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  padding: 8px 12px;
+  padding: 10px 15px;
   display: block;
   border-radius: 6px;
   transition: all 0.3s ease;
@@ -94,6 +101,7 @@
   color: #fff;
 }
 
+/* ---------- Close Button ---------- */
 .close-btn {
   position: absolute;
   top: 15px;
@@ -104,7 +112,7 @@
   z-index: 9999;
 }
 
-/* Overlay */
+/* ---------- Overlay ---------- */
 .overlay {
   position: fixed;
   top: 0;
@@ -116,13 +124,21 @@
   pointer-events: auto;
 }
 
-/* Responsive */
+/* ---------- Responsive Styles ---------- */
 @media (max-width: 768px) {
   .desktop-links {
-    display: none;
+    display: none;      /* hide desktop links */
   }
 
   .menu-toggle {
-    display: block;
+    display: block;     /* show hamburger */
   }
+}
+
+/* ---------- Prevent Horizontal Overflow ---------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
